@@ -1,0 +1,57 @@
+/* Reusable CSS */
+
+
+p {
+    text-align: justify;
+}
+
+/* Body */
+body {
+    background-color: #f6f4fb;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+ .navbar {
+    background-color: #e1d9f2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; 
+ }
+
+ .navbar-brand {
+    font-weight: bold;
+    font-size: x-large;
+ }
+
+ .margin-to-navbar {
+    margin-top: 100px !important;
+ }
+
+ /* Footer */
+ffooterquefunciona {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    height: 0;
+}
+
+footer {
+    bottom: 0 !important;
+    margin-top: auto !important;
+    position: relative !important;
+}
+
+
+/* Base styles for the iframe */
+.map {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+
+  
