@@ -121,12 +121,17 @@ footer {
 
  /* Scroll Up Button */
  .scrollup {
+   display: none;
+ }
+
+ .show {
     position: fixed;
     z-index: 1030;
     right: 1.5rem;
     bottom: 90px;
     font-size: larger;
     color: #37194d;
+    display: block;
  }
 
  @media screen and (max-width: 410px) {
