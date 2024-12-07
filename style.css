@@ -8,6 +8,10 @@ p {
     text-align: justify;
 }
 
+a {
+   text-decoration: none;
+}
+
 .btn-1 {
    color: white;
    background: linear-gradient(to right, #2d133a, #37194dd5);
@@ -190,4 +194,18 @@ footer {
 }
 .btn-services:hover {
    width: 140px;
+}
+
+/* Serices section*/
+
+.service-details {
+   background-color: #d796f710;
+   border-radius: 50px;
+   border: 1px solid #1d002b;
+}
+
+.service-img {
+   width: 80%;
+   border-radius: 50px;
+
 }
