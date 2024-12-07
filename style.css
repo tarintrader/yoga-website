@@ -35,6 +35,7 @@ body {
     margin-top: 100px !important;
  }
 
+ /* Hide brand text in smaller devices */
  @media screen and (max-width: 550px) {
    .navbar-brand {
       font-size: 0;
