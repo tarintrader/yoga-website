@@ -184,3 +184,10 @@ footer {
 .team-card {
    background-color: #d796f710;
 }
+
+.btn-services {
+   width: 140px;
+}
+.btn-services:hover {
+   width: 140px;
+}
