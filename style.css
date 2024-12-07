@@ -35,10 +35,11 @@ body {
     margin-top: 100px !important;
  }
 
-@media (max-width: 550px) {
+ @media screen and (max-width: 550px) {
    .navbar-brand {
-       font-size: 0;
+      font-size: 0;
    }
+ }
 
  /* Footer */
 
