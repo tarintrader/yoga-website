@@ -8,6 +8,36 @@ p {
     text-align: justify;
 }
 
+.btn-1 {
+   color: white;
+   background: linear-gradient(to right, #2d133a, #37194dd5);
+   border: 2px solid #1d002b; /* Adds a border with the same color as the darker gradient */
+   border-radius: 5px; /* Optional: makes the corners slightly rounded */
+   padding: 10px 20px; /* Optional: adds spacing inside the button */
+   font-weight: bold;
+   height: 50px;
+}
+
+.btn-1:hover {
+   background: linear-gradient(to left, #2d133a, #37194dd5);
+   font-size: 105%;
+}
+
+.btn-2 {
+   color: white;
+   background: linear-gradient(to right, #815199, #00000069);
+   border: 2px solid #1d002b; 
+   border-radius: 5px; 
+   padding: 10px 20px;
+   font-weight: bold;
+   height: 50px;
+}
+
+.btn-2:hover {
+   background: linear-gradient(to right, #815199, #00000069);
+   font-size: 105%;
+}
+
 /* Body */
 body {
     background-color: #f6f4fb;
