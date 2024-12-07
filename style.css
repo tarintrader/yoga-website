@@ -35,18 +35,21 @@ body {
     margin-top: 100px !important;
  }
 
+@media (max-width: 550px) {
+   .navbar-brand {
+       font-size: 0;
+   }
+
  /* Footer */
-ffooterquefunciona {
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    height: 0;
-}
 
 footer {
     bottom: 0 !important;
     margin-top: auto !important;
     position: relative !important;
+}
+
+.bi {
+   color: black;
 }
 
 
@@ -124,24 +127,13 @@ footer {
    display: none;
  }
 
- .show {
+ .show-scrollup {
     position: fixed;
     z-index: 1030;
-    right: 1.5rem;
+    right: 0.5rem;
     bottom: 90px;
     font-size: larger;
     color: #37194d;
     display: block;
  }
 
- @media screen and (max-width: 410px) {
-    .scrollup {
-        bottom: 150px;
-    }
- }
-
- @media screen and (max-width: 340px) {
-    .scrollup {
-        bottom: 250px;
-    }
- }

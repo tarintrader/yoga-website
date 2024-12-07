@@ -17,6 +17,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
       <!-- CSS -->
        <link href="style.css" rel="stylesheet">
+      <!-- Jquery --> 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body class="d-flex flex-column min-vh-100">
       <!-- Navbar -->
@@ -133,31 +135,59 @@
       </div>
       </div>
 
+            <!-- Scroll Top Button -->
+            <a href="#">
+              <i class="bi bi-arrow-up-square-fill scrollup" id="scrollup"></i>
+             </a>
+             <!-- JQuery to show/hide Scroll Top Button -->
+             <script>
+              var offset = 150;
+              $(window).on('load scroll', function(){
+                  
+                  if( $(window).scrollTop() > offset ){
+                      $('#scrollup').addClass('show-scrollup')
+                  }else{
+                      $('#scrollup').removeClass('show-scrollup')
+                  }
+              })
+              </script>
 
       <!-- Footer -->
       <div class="flex-grow-1"></div>
       <footer class="container-fluid mt-5">
-        <ul class="nav justify-content-center border-bottom pb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        <ul class="nav justify-content-center border-bottom pb-3 px-2">
+          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Services</a></li>
+          <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
         </ul>
 
         <div class="d-flex flex-wrap justify-content-between align-items-center px-1">
           <div class="justify-content-center col-md-4 d-flex align-items-center my-3">
-            <a href="/" class="ps-2">
+            <a href="/index.html" class="ps-2">
               <img src="assets/img/icon.png" alt="Website Logo" width="35">
             </a>
-            <span class="mx-2 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+            <span class="mx-2 mb-md-0 text-body-secondary">© 2024 Asana Yoga Ltd</span>
           </div>
       
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex my-3">
-            <li class="mx-2"><i class="bi bi-facebook"></i></li>
-            <li class="mx-2"><i class="bi bi-facebook"></i></li>
-            <li class="mx-2"><i class="bi bi-facebook"></i></li>
+            <li class="mx-2">
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="bi bi-facebook"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="bi bi-instagram"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.twitter.com" target="_blank">
+                  <i class="bi bi-twitter"></i>
+              </a>
+          </li>
           </ul>
+        
         </div>
       </footer>
 
