@@ -3,15 +3,14 @@
    --base-color: #f6f4fb;
    --text-color: black;
    --scrollup-color: #37194d;
-
-
-
+   --logo-color: black;
 }
 
 .darkmode {
    --base-color: black;
    --text-color: white;
    --scrollup-color: #815199;
+   --logo-color: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 
 
@@ -147,12 +146,9 @@ footer .nav-link {
    color: var(--text-color);
 }
 
-.asana-logo {
-   fill: var(--text-color);
-}
 
 .filter-white{
-   filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
+   filter: var(--logo-color);
 }
 
 
@@ -213,6 +209,10 @@ footer .nav-link {
     font-size: 0.9rem;
     color: #656060;
  }
+
+ .carousel-control-prev-icon {
+   background-color: var(--text-color) !important; 
+}
 
  @media screen and (max-width: 800px) {
     .testimonial-img {
