@@ -1,22 +1,19 @@
 /* Reusable CSS */
 :root {
    --base-color: #f6f4fb;
-   --base-variant:;
    --text-color: black;
-   --secondary-text: 
+   --scrollup-color: #37194d;
+
 
 
 }
 
 .darkmode {
    --base-color: black;
-   --base-variant:;
    --text-color: white;
+   --scrollup-color: #815199;
 }
 
-.cta-button {
-   background-color: ;
-}
 
 #theme-switch {
    height: 25px;
@@ -25,13 +22,16 @@
    padding: 0;
    border: none;
    background-color: transparent;
-   display: ;
    justify-content: center;
    align-items: center;
 }
 
 #theme-switch svg {
-   fill: blue;
+   fill: darkslategrey;
+}
+
+#theme-switch svg:hover {
+   fill: black;
 }
 
 #theme-switch svg:last-child {
@@ -236,7 +236,7 @@ footer .nav-link {
     right: 0.5rem;
     bottom: 90px;
     font-size: larger;
-    color: #37194d;
+    color: var(--scrollup-color);
     display: block;
  }
 
@@ -251,6 +251,12 @@ footer .nav-link {
    background-color: #d796f710;
 }
 
+.card {
+   color: var(--text-color);
+   background-color: #d796f710;
+}
+
+
 .btn-services {
    width: 140px;
 }
@@ -258,12 +264,13 @@ footer .nav-link {
    width: 140px;
 }
 
-/* Serices section*/
+/* Services section*/
 
 .service-details {
    background-color: #d796f710;
    border-radius: 50px;
    border: 1px solid #1d002b;
+   color: var(--text-color);
 }
 
 .service-img {
